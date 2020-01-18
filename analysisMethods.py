@@ -1,5 +1,8 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set_style("whitegrid")
 
 # Main dataframe that we will perform  analysis on
 waterQuality = pd.read_pickle("waterQualityData.pkl")
@@ -9,7 +12,6 @@ station_list = sorted(list(set(list(waterQuality[waterQuality.columns[0]]))))
 
 def missingDates(meanDataframe, FreestationList):
     '''Determines which dates in a year are missing'''
-    #holder_dict = {}
     for station in FreestationList:
         missing_date = ({station: meanDataframe.groupby('Station').get_group(station)[meanDataframe.groupby('Station').get_group(station).isnull().any(axis = 1)].index})
         print(station, missing_date)
@@ -32,6 +34,12 @@ def monthlyMean(yearGroup, constituent):
     monthlyMeans = monthlyMeans[['Station', 'mean']]
     return monthlyMeans
 
+# Must already have a monthlyMean Dataframe object to use for parameter yearGroup
+def monthlyMeanPlot(yearGroupedMeans):
+    monthlyMeansFigure, axis = plt.subplot(1,1, figsize = (9,5))
+    for key, group in yearGroupedMeans.groupby(['Station']):
+        group.plot(ax = axis, kind = 'line', legend = False, marker = 'o')
+
 def monthlyMedian(yearGroup, constituent):
     '''Returns a dataframe object displaying median values by month 
     for given constituent
@@ -45,3 +53,6 @@ def monthlyMedian(yearGroup, constituent):
     monthlyMedians = pd.concat(monthlyMedians)
     monthlyMedians = monthlyMedians[['Station', 'mean']]
     return monthlyMedians
+
+def test(integer):
+    print(integer)

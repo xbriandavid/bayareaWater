@@ -36,9 +36,13 @@ def monthlyMean(yearGroup, constituent):
 
 # Must already have a monthlyMean Dataframe object to use for parameter yearGroup
 def monthlyMeanPlot(yearGroupedMeans):
-    monthlyMeansFigure, axis = plt.subplot(1,1, figsize = (9,5))
-    for key, group in yearGroupedMeans.groupby(['Station']):
-        group.plot(ax = axis, kind = 'line', legend = False, marker = 'o')
+    index = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep', 'Oct', 'Nov', 'Dec']
+    figure, axis = plt.subplots(1, 1, figsize = (10, 8))
+    for k,v in yearGroupedMeans.groupby('Station'):
+        v['mean'].plot(kind = 'line', ax = axis, legend= False)
+    plt.xticks([0,1,2,3,4,5,6,7,8,9,10,11], index)
+    plt.ylim([0,50])
+
 
 def monthlyMedian(yearGroup, constituent):
     '''Returns a dataframe object displaying median values by month 

@@ -62,7 +62,15 @@ def monthlyMedian(yearGroup, constituent):
     return monthlyMedians
 
 def printOutliers(yearGroup, constituent):
-    pass
+    '''Prints the outliers of a specific year by constituent 
+    '''
+    listOfStations = set(station_list).difference(missingStations(yearGroup))
+    for station in listOfStations:
+        print("Station" + str(station))
+        dataframe = yearGroup.get_group((station, constituent))
+        dataframe['Z-score'] = np.abs(dataframe['Value'] - dataframe['Value'].mean())/dataframe['Value'].std()
+        print(dataframe[dataframe['Z-score'] >= 3][['Value', 'Z-score']])
+        print("\n")
 
 # Tags: Stations
 def stationSwarmPlot(yearGroup, stations, constituent):
@@ -104,3 +112,5 @@ def stationDepthPlots(yearGroup, stations, constituent):
         station_ax.set_ylim([0, ylim])
         station_ax.set_title("STATION " + str(station), loc = 'left')
     plt.tight_layout()
+
+# to-do: scatterplot methods 

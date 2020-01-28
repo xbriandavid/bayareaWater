@@ -40,10 +40,9 @@ def monthlyMeanPlot(yearGroupedMeans):
     '''Plots the average value of the constituent input by month
     '''
     index = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep', 'Oct', 'Nov', 'Dec']
-    figure, axis = plt.subplots(1, 1, figsize = (10, 8))
+    fig, axis = plt.subplots(1, 1, figsize = (10, 8))
     for k,v in yearGroupedMeans.groupby('Station'):
-        v['mean'].plot(kind = 'line', ax = axis, legend= False)
-    #plt.xticks([0,1,2,3,4,5,6,7,8,9,10,11], index)
+        v['mean'].plot(kind = 'line', ax = axis, legend= False, figure=fig)
     plt.ylim([0,60])
 
 
@@ -86,6 +85,7 @@ def stationSwarmPlot(yearGroup, stations, constituent):
     swarmPlotDf['Station Number'] = ["Station " + x for x in swarmPlotDf['Station Number']]
     fig, axs = plt.subplots(figsize = (13,7))
     swarmplot = sns.boxplot(x = 'Value', y = 'Station Number', data = swarmPlotDf, ax = axs)
+    axs.set_xlim(0, 30)
     return swarmplot
 
 # Tags: Stations 
@@ -114,3 +114,4 @@ def stationDepthPlots(yearGroup, stations, constituent):
     plt.tight_layout()
 
 # to-do: scatterplot methods 
+# to-do 

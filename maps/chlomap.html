@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4e017ab9d3b24e20a8c1581fa48e002e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+            <style> #vega_c60089b3711d4df897fc4635e212a1a3 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/1.4.3/vega.min.js"></script>
+    
+            <style> #vega_f3c2311490f44e008914ba5fce3e3168 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_6a46818b73be4813891ed2a16d2524d0 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_411e1279462441ea8c3e9905a630a362 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_163cfe99ed324a229d789bad53824456 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_5138347d98174042b76abede254f5894 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_b7cc893302a641bd9c04e1ed1dc13cf7 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_081d1ab0a6e74af59a30035f97acc471 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_d397227a6e484ce199f575dd6d654faf {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_078b42357ab54ddf8ec343067b087347 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_eff1fd98419145269b184d008ce0ed2e {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_f988d82ad891467c80abfd80dbd0845c {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_5b79959f8f4e4e5e82f96a094d750c3d {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_289b60f883bb4e5691afd4a9f349f7c1 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_f9eb64bc8fcd48a19f9052301a568555 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_9cb385adbc4c4d10b08be0b6a5a61014 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_88ae80dea75e4322ae7e424142cd9c28 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_d2fc1e4348ed4ee2a6d19d7accc851af {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_f10d4b1a2feb4b488560a3ca828b9877 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_cec7813b8203422b97d8736a33ad28f9 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_699c6b091145437194267c10bdd14fea {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_ed92a10bdfa64a2a9c7e1bfc735745dd {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_8f60243e426c429a8c060893b235430d {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_508095d87f5f49498abf8b88fa0f6944 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_80a52a3a73924e189a8f772d2b10ff52 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_f6c75cc8764d4925a00df6e0ed46b005 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_8d5a23172ee145ee8ebec95c909f585e {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_978a6efd5d724ada973ef7a9a8dff04a {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_5a1aa6639042488aa05926fcdd77603b {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_1bc1cb44608b412b973a71dc956669ac {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_49c7a4e660ba4b46ac5ebb2438dd6225 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_7b8f876e2ba3477e912f81d4b71c1401 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_89f075e0703643feac81b6381c07ccf6 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_7c8ed8d399234e3a80f102b2936cc6ac {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_98a8c8c55f63469aa3bb298242207c6e {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_5a82355684bd4c609492f6652addad7d {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_4e6c5ef7b7b848d1931724a83a6e9659 {
+                position : relative;
+                width : 1000.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4e017ab9d3b24e20a8c1581fa48e002e" ></div>
+        
+</body>
+<script>    
+    
+            var map_4e017ab9d3b24e20a8c1581fa48e002e = L.map(
+                "map_4e017ab9d3b24e20a8c1581fa48e002e",
+                {
+                    center: [37.739417, -122.254747],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5505f4b98e5549a5ba64379debac21e0 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var marker_f4ee4846fc794c5082de8135caf0c39b = L.marker(
+                [38.06333333333333, -121.85166666666667],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_4147cfab5a0143a1a68b1925e46da5d0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e2.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_f4ee4846fc794c5082de8135caf0c39b.setIcon(div_icon_4147cfab5a0143a1a68b1925e46da5d0);
+        
+    function vega_parse(spec, div) {
+            vg.parse.spec(spec, function(chart) { chart({el:div}).update(); });}
+    
+        var popup_3230c6a0b1154012a633a1a50a0d72d3 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_c60089b3711d4df897fc4635e212a1a3 = $(`             <div id="vega_c60089b3711d4df897fc4635e212a1a3"></div>             `)[0];
+            popup_3230c6a0b1154012a633a1a50a0d72d3.setContent(vega_c60089b3711d4df897fc4635e212a1a3);
+        
+
+        marker_f4ee4846fc794c5082de8135caf0c39b.bindPopup(popup_3230c6a0b1154012a633a1a50a0d72d3)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 2.0", "val": 2.6}, {"col": "2015", "idx": "Station 2.0", "val": 1.8}, {"col": "2016", "idx": "Station 2.0", "val": 2.5}, {"col": "2017", "idx": "Station 2.0", "val": 3.4}, {"col": "2018", "idx": "Station 2.0", "val": 2.9}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_c60089b3711d4df897fc4635e212a1a3);
+            
+        
+    
+    
+            var circle_marker_2bd21925e5e64de0a9df9b59d4bae888 = L.circleMarker(
+                [38.06333333333333, -121.85166666666667],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_2bd21925e5e64de0a9df9b59d4bae888.bindTooltip(
+                `<div>
+                     Chain Island
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50b2b0772f4b402b9d4a6da774c05939 = L.marker(
+                [38.05166666666667, -121.88],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_9a7a05c7ead44a1db2c4746505ba9c46 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e3.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_50b2b0772f4b402b9d4a6da774c05939.setIcon(div_icon_9a7a05c7ead44a1db2c4746505ba9c46);
+        
+    
+        var popup_0fae1e59579146ab97ab51950f710212 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_f3c2311490f44e008914ba5fce3e3168 = $(`             <div id="vega_f3c2311490f44e008914ba5fce3e3168"></div>             `)[0];
+            popup_0fae1e59579146ab97ab51950f710212.setContent(vega_f3c2311490f44e008914ba5fce3e3168);
+        
+
+        marker_50b2b0772f4b402b9d4a6da774c05939.bindPopup(popup_0fae1e59579146ab97ab51950f710212)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 3.0", "val": 2.6}, {"col": "2015", "idx": "Station 3.0", "val": 1.8}, {"col": "2016", "idx": "Station 3.0", "val": 2.4}, {"col": "2017", "idx": "Station 3.0", "val": 3.1}, {"col": "2018", "idx": "Station 3.0", "val": 3.1}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_f3c2311490f44e008914ba5fce3e3168);
+            
+        
+    
+    
+            var circle_marker_5105aabcc88e46bc9304a457e72d9059 = L.circleMarker(
+                [38.05166666666667, -121.88],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_5105aabcc88e46bc9304a457e72d9059.bindTooltip(
+                `<div>
+                     Pittsburg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75d3d6afefe94b9798e1b5d97969854b = L.marker(
+                [38.04833333333333, -121.935],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_db9d2aeeb1c046a3938a17d14590309b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e4.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_75d3d6afefe94b9798e1b5d97969854b.setIcon(div_icon_db9d2aeeb1c046a3938a17d14590309b);
+        
+    
+        var popup_26a7441576194c9bbe49ee900ffbab39 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_6a46818b73be4813891ed2a16d2524d0 = $(`             <div id="vega_6a46818b73be4813891ed2a16d2524d0"></div>             `)[0];
+            popup_26a7441576194c9bbe49ee900ffbab39.setContent(vega_6a46818b73be4813891ed2a16d2524d0);
+        
+
+        marker_75d3d6afefe94b9798e1b5d97969854b.bindPopup(popup_26a7441576194c9bbe49ee900ffbab39)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 4.0", "val": NaN}, {"col": "2015", "idx": "Station 4.0", "val": 2.0}, {"col": "2016", "idx": "Station 4.0", "val": 2.1}, {"col": "2017", "idx": "Station 4.0", "val": 3.05}, {"col": "2018", "idx": "Station 4.0", "val": 3.1}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_6a46818b73be4813891ed2a16d2524d0);
+            
+        
+    
+    
+            var circle_marker_ae312ad3a3964140b6e8c41fec250e31 = L.circleMarker(
+                [38.04833333333333, -121.935],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_ae312ad3a3964140b6e8c41fec250e31.bindTooltip(
+                `<div>
+                     Simmons Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f49445d605149188d45503465f2143a = L.marker(
+                [38.06, -121.98],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_0fa7348c443b4c08a4d18ee53d75442f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e5.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_3f49445d605149188d45503465f2143a.setIcon(div_icon_0fa7348c443b4c08a4d18ee53d75442f);
+        
+    
+        var popup_c64031ad452b48a7a745ef45f6a0cf7e = L.popup({"maxWidth": 1100});
+
+        
+            var vega_411e1279462441ea8c3e9905a630a362 = $(`             <div id="vega_411e1279462441ea8c3e9905a630a362"></div>             `)[0];
+            popup_c64031ad452b48a7a745ef45f6a0cf7e.setContent(vega_411e1279462441ea8c3e9905a630a362);
+        
+
+        marker_3f49445d605149188d45503465f2143a.bindPopup(popup_c64031ad452b48a7a745ef45f6a0cf7e)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 5.0", "val": 2.4}, {"col": "2015", "idx": "Station 5.0", "val": 2.0}, {"col": "2016", "idx": "Station 5.0", "val": 2.3}, {"col": "2017", "idx": "Station 5.0", "val": 2.9}, {"col": "2018", "idx": "Station 5.0", "val": 2.9}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_411e1279462441ea8c3e9905a630a362);
+            
+        
+    
+    
+            var circle_marker_2c87857903ad4647a2ecda8094290428 = L.circleMarker(
+                [38.06, -121.98],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_2c87857903ad4647a2ecda8094290428.bindTooltip(
+                `<div>
+                     Middle Ground
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1dc4c7e6b6574415af28be275a9d44d1 = L.marker(
+                [38.065, -122.035],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_ea09d5cb961f4cb9bd925e86ad32bf21 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e6.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_1dc4c7e6b6574415af28be275a9d44d1.setIcon(div_icon_ea09d5cb961f4cb9bd925e86ad32bf21);
+        
+    
+        var popup_fa36f596cd9f478f8d2b5704eb151c2b = L.popup({"maxWidth": 1100});
+
+        
+            var vega_163cfe99ed324a229d789bad53824456 = $(`             <div id="vega_163cfe99ed324a229d789bad53824456"></div>             `)[0];
+            popup_fa36f596cd9f478f8d2b5704eb151c2b.setContent(vega_163cfe99ed324a229d789bad53824456);
+        
+
+        marker_1dc4c7e6b6574415af28be275a9d44d1.bindPopup(popup_fa36f596cd9f478f8d2b5704eb151c2b)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 6.0", "val": 2.7}, {"col": "2015", "idx": "Station 6.0", "val": 2.2}, {"col": "2016", "idx": "Station 6.0", "val": 2.5}, {"col": "2017", "idx": "Station 6.0", "val": 2.7}, {"col": "2018", "idx": "Station 6.0", "val": 2.8}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_163cfe99ed324a229d789bad53824456);
+            
+        
+    
+    
+            var circle_marker_2d7f42fdae4344b0bd61aa85cff78fa2 = L.circleMarker(
+                [38.065, -122.035],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_2d7f42fdae4344b0bd61aa85cff78fa2.bindTooltip(
+                `<div>
+                     Roe Island
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffd3371957d8439791a1778a25a04754 = L.marker(
+                [38.04833333333333, -122.09666666666666],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_06c81c773b444c6e8c72ee6ff030d96b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e7.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_ffd3371957d8439791a1778a25a04754.setIcon(div_icon_06c81c773b444c6e8c72ee6ff030d96b);
+        
+    
+        var popup_74c3be2bb93246fa936c03ad14681e65 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_5138347d98174042b76abede254f5894 = $(`             <div id="vega_5138347d98174042b76abede254f5894"></div>             `)[0];
+            popup_74c3be2bb93246fa936c03ad14681e65.setContent(vega_5138347d98174042b76abede254f5894);
+        
+
+        marker_ffd3371957d8439791a1778a25a04754.bindPopup(popup_74c3be2bb93246fa936c03ad14681e65)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 7.0", "val": 2.7}, {"col": "2015", "idx": "Station 7.0", "val": 2.0}, {"col": "2016", "idx": "Station 7.0", "val": 1.95}, {"col": "2017", "idx": "Station 7.0", "val": 2.2}, {"col": "2018", "idx": "Station 7.0", "val": 2.6}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_5138347d98174042b76abede254f5894);
+            
+        
+    
+    
+            var circle_marker_a2f67d05fd0245dd8d6a501d79047f06 = L.circleMarker(
+                [38.04833333333333, -122.09666666666666],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_a2f67d05fd0245dd8d6a501d79047f06.bindTooltip(
+                `<div>
+                     Avon Pier
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73082433a6a74d1f95d279f43a5aabd0 = L.marker(
+                [38.03, -122.15166666666667],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_1c72b08a4313419f80cf00ee8ba04d5e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e8.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_73082433a6a74d1f95d279f43a5aabd0.setIcon(div_icon_1c72b08a4313419f80cf00ee8ba04d5e);
+        
+    
+        var popup_d8c4ef4ba33b4ea3ac0a70fe46bc63a9 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_b7cc893302a641bd9c04e1ed1dc13cf7 = $(`             <div id="vega_b7cc893302a641bd9c04e1ed1dc13cf7"></div>             `)[0];
+            popup_d8c4ef4ba33b4ea3ac0a70fe46bc63a9.setContent(vega_b7cc893302a641bd9c04e1ed1dc13cf7);
+        
+
+        marker_73082433a6a74d1f95d279f43a5aabd0.bindPopup(popup_d8c4ef4ba33b4ea3ac0a70fe46bc63a9)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 8.0", "val": NaN}, {"col": "2015", "idx": "Station 8.0", "val": 2.0}, {"col": "2016", "idx": "Station 8.0", "val": 2.0}, {"col": "2017", "idx": "Station 8.0", "val": 2.3}, {"col": "2018", "idx": "Station 8.0", "val": 2.5}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_b7cc893302a641bd9c04e1ed1dc13cf7);
+            
+        
+    
+    
+            var circle_marker_d57ebf094b1543a79d471a29ac0cb931 = L.circleMarker(
+                [38.03, -122.15166666666667],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_d57ebf094b1543a79d471a29ac0cb931.bindTooltip(
+                `<div>
+                     Martinez
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c742572fd79453bac66a50f8620e895 = L.marker(
+                [38.056666666666665, -122.185],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_050db70883ff4f1eb4e7f4d106e3fc21 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e9.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_1c742572fd79453bac66a50f8620e895.setIcon(div_icon_050db70883ff4f1eb4e7f4d106e3fc21);
+        
+    
+        var popup_f69e0c97be0948f7854e6c53445505d2 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_081d1ab0a6e74af59a30035f97acc471 = $(`             <div id="vega_081d1ab0a6e74af59a30035f97acc471"></div>             `)[0];
+            popup_f69e0c97be0948f7854e6c53445505d2.setContent(vega_081d1ab0a6e74af59a30035f97acc471);
+        
+
+        marker_1c742572fd79453bac66a50f8620e895.bindPopup(popup_f69e0c97be0948f7854e6c53445505d2)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 9.0", "val": 2.3}, {"col": "2015", "idx": "Station 9.0", "val": 2.0}, {"col": "2016", "idx": "Station 9.0", "val": 2.0}, {"col": "2017", "idx": "Station 9.0", "val": 2.9}, {"col": "2018", "idx": "Station 9.0", "val": 2.6}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_081d1ab0a6e74af59a30035f97acc471);
+            
+        
+    
+    
+            var circle_marker_72b95042605047509e2bd9475840d0cb = L.circleMarker(
+                [38.056666666666665, -122.185],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_72b95042605047509e2bd9475840d0cb.bindTooltip(
+                `<div>
+                     Benicia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffa54b461bee42f391babc1e878305f0 = L.marker(
+                [38.06, -122.20833333333333],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_515543383a9c4967945d09eb5b7d0609 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e10.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_ffa54b461bee42f391babc1e878305f0.setIcon(div_icon_515543383a9c4967945d09eb5b7d0609);
+        
+    
+        var popup_e1560d44cd79408cb4970cce07eda145 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_d397227a6e484ce199f575dd6d654faf = $(`             <div id="vega_d397227a6e484ce199f575dd6d654faf"></div>             `)[0];
+            popup_e1560d44cd79408cb4970cce07eda145.setContent(vega_d397227a6e484ce199f575dd6d654faf);
+        
+
+        marker_ffa54b461bee42f391babc1e878305f0.bindPopup(popup_e1560d44cd79408cb4970cce07eda145)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 10.0", "val": 2.2}, {"col": "2015", "idx": "Station 10.0", "val": 2.4}, {"col": "2016", "idx": "Station 10.0", "val": 1.7}, {"col": "2017", "idx": "Station 10.0", "val": 2.0}, {"col": "2018", "idx": "Station 10.0", "val": 2.5}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_d397227a6e484ce199f575dd6d654faf);
+            
+        
+    
+    
+            var circle_marker_3bc6351dbf33477e94f679c4486c87ad = L.circleMarker(
+                [38.06, -122.20833333333333],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_3bc6351dbf33477e94f679c4486c87ad.bindTooltip(
+                `<div>
+                     Crockett
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_638b80e78684478ea485ce456dd3814a = L.marker(
+                [38.06, -122.26666666666667],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_069cfc5d54c64783addde531a12e2826 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e11.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_638b80e78684478ea485ce456dd3814a.setIcon(div_icon_069cfc5d54c64783addde531a12e2826);
+        
+    
+        var popup_4e1ad8e516ca49c19c3403c69c4c49f3 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_078b42357ab54ddf8ec343067b087347 = $(`             <div id="vega_078b42357ab54ddf8ec343067b087347"></div>             `)[0];
+            popup_4e1ad8e516ca49c19c3403c69c4c49f3.setContent(vega_078b42357ab54ddf8ec343067b087347);
+        
+
+        marker_638b80e78684478ea485ce456dd3814a.bindPopup(popup_4e1ad8e516ca49c19c3403c69c4c49f3)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 11.0", "val": 2.6}, {"col": "2015", "idx": "Station 11.0", "val": 2.2}, {"col": "2016", "idx": "Station 11.0", "val": 2.0}, {"col": "2017", "idx": "Station 11.0", "val": 2.3}, {"col": "2018", "idx": "Station 11.0", "val": 2.3}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_078b42357ab54ddf8ec343067b087347);
+            
+        
+    
+    
+            var circle_marker_4e75942411b14129822a2b3dfc595c18 = L.circleMarker(
+                [38.06, -122.26666666666667],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_4e75942411b14129822a2b3dfc595c18.bindTooltip(
+                `<div>
+                     Mare Island
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57f5a2657fc746288a99a4559664f702 = L.marker(
+                [38.05166666666667, -122.31166666666667],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_2a3405ec6c1149d49ead965a950e457b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e12.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_57f5a2657fc746288a99a4559664f702.setIcon(div_icon_2a3405ec6c1149d49ead965a950e457b);
+        
+    
+        var popup_2dea03a5ff864063b4e45ec7cb697da7 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_eff1fd98419145269b184d008ce0ed2e = $(`             <div id="vega_eff1fd98419145269b184d008ce0ed2e"></div>             `)[0];
+            popup_2dea03a5ff864063b4e45ec7cb697da7.setContent(vega_eff1fd98419145269b184d008ce0ed2e);
+        
+
+        marker_57f5a2657fc746288a99a4559664f702.bindPopup(popup_2dea03a5ff864063b4e45ec7cb697da7)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 12.0", "val": 2.7}, {"col": "2015", "idx": "Station 12.0", "val": 2.1}, {"col": "2016", "idx": "Station 12.0", "val": 2.2}, {"col": "2017", "idx": "Station 12.0", "val": 2.3}, {"col": "2018", "idx": "Station 12.0", "val": 2.5}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_eff1fd98419145269b184d008ce0ed2e);
+            
+        
+    
+    
+            var circle_marker_59d29522a6fb4b3fa64d74c4094a62aa = L.circleMarker(
+                [38.05166666666667, -122.31166666666667],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_59d29522a6fb4b3fa64d74c4094a62aa.bindTooltip(
+                `<div>
+                     Pinole Shoal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b49ea20e1334ce7b92031e3ca9b81ea = L.marker(
+                [38.028333333333336, -122.37],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_d4b1358657ac473dbd3c0e76fa09816b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e13.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_7b49ea20e1334ce7b92031e3ca9b81ea.setIcon(div_icon_d4b1358657ac473dbd3c0e76fa09816b);
+        
+    
+        var popup_34b01dc5fdf34f6d82fba3c20639e525 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_f988d82ad891467c80abfd80dbd0845c = $(`             <div id="vega_f988d82ad891467c80abfd80dbd0845c"></div>             `)[0];
+            popup_34b01dc5fdf34f6d82fba3c20639e525.setContent(vega_f988d82ad891467c80abfd80dbd0845c);
+        
+
+        marker_7b49ea20e1334ce7b92031e3ca9b81ea.bindPopup(popup_34b01dc5fdf34f6d82fba3c20639e525)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 13.0", "val": 2.9}, {"col": "2015", "idx": "Station 13.0", "val": 2.6}, {"col": "2016", "idx": "Station 13.0", "val": 2.4}, {"col": "2017", "idx": "Station 13.0", "val": 2.3}, {"col": "2018", "idx": "Station 13.0", "val": 2.9}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_f988d82ad891467c80abfd80dbd0845c);
+            
+        
+    
+    
+            var circle_marker_50af1f952e16479288ad7a12f052e532 = L.circleMarker(
+                [38.028333333333336, -122.37],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_50af1f952e16479288ad7a12f052e532.bindTooltip(
+                `<div>
+                     N. of Pinole Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_854955149d93425e90dd411dff5388ee = L.marker(
+                [38.00666666666667, -122.405],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_c490b28c34fa4f04a32cd41bc2ca2f47 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e14.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_854955149d93425e90dd411dff5388ee.setIcon(div_icon_c490b28c34fa4f04a32cd41bc2ca2f47);
+        
+    
+        var popup_c030c3df9eaa4cdfa46b264cc5d70a5e = L.popup({"maxWidth": 1100});
+
+        
+            var vega_5b79959f8f4e4e5e82f96a094d750c3d = $(`             <div id="vega_5b79959f8f4e4e5e82f96a094d750c3d"></div>             `)[0];
+            popup_c030c3df9eaa4cdfa46b264cc5d70a5e.setContent(vega_5b79959f8f4e4e5e82f96a094d750c3d);
+        
+
+        marker_854955149d93425e90dd411dff5388ee.bindPopup(popup_c030c3df9eaa4cdfa46b264cc5d70a5e)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 14.0", "val": 2.7}, {"col": "2015", "idx": "Station 14.0", "val": 2.6}, {"col": "2016", "idx": "Station 14.0", "val": 2.3}, {"col": "2017", "idx": "Station 14.0", "val": 2.5}, {"col": "2018", "idx": "Station 14.0", "val": 3.1}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_5b79959f8f4e4e5e82f96a094d750c3d);
+            
+        
+    
+    
+            var circle_marker_414bb12825f14dccab1f2e53dca7b4ac = L.circleMarker(
+                [38.00666666666667, -122.405],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_414bb12825f14dccab1f2e53dca7b4ac.bindTooltip(
+                `<div>
+                     "Echo" Buoy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b20a716a92534e9d9db9ec25b3e2f103 = L.marker(
+                [37.973333333333336, -122.43666666666667],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_2ebc2fdfd3fb4b4e8b1cde97074de0c5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e15.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_b20a716a92534e9d9db9ec25b3e2f103.setIcon(div_icon_2ebc2fdfd3fb4b4e8b1cde97074de0c5);
+        
+    
+        var popup_5cbdfc1552c749d2803f16bd856d58b7 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_289b60f883bb4e5691afd4a9f349f7c1 = $(`             <div id="vega_289b60f883bb4e5691afd4a9f349f7c1"></div>             `)[0];
+            popup_5cbdfc1552c749d2803f16bd856d58b7.setContent(vega_289b60f883bb4e5691afd4a9f349f7c1);
+        
+
+        marker_b20a716a92534e9d9db9ec25b3e2f103.bindPopup(popup_5cbdfc1552c749d2803f16bd856d58b7)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 15.0", "val": 2.75}, {"col": "2015", "idx": "Station 15.0", "val": 3.2}, {"col": "2016", "idx": "Station 15.0", "val": 2.5}, {"col": "2017", "idx": "Station 15.0", "val": 2.7}, {"col": "2018", "idx": "Station 15.0", "val": 3.5}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_289b60f883bb4e5691afd4a9f349f7c1);
+            
+        
+    
+    
+            var circle_marker_2b44a3327aad40b58c2bfc10906a1379 = L.circleMarker(
+                [37.973333333333336, -122.43666666666667],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_2b44a3327aad40b58c2bfc10906a1379.bindTooltip(
+                `<div>
+                     Point San Pablo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d087f487c98c42bc9006712137ba2cc6 = L.marker(
+                [37.916666666666664, -122.44666666666667],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_14d6d5ae5eef4d3683e7901a2c616c24 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e16.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_d087f487c98c42bc9006712137ba2cc6.setIcon(div_icon_14d6d5ae5eef4d3683e7901a2c616c24);
+        
+    
+        var popup_573f4488878d463b95b545e164e181f4 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_f9eb64bc8fcd48a19f9052301a568555 = $(`             <div id="vega_f9eb64bc8fcd48a19f9052301a568555"></div>             `)[0];
+            popup_573f4488878d463b95b545e164e181f4.setContent(vega_f9eb64bc8fcd48a19f9052301a568555);
+        
+
+        marker_d087f487c98c42bc9006712137ba2cc6.bindPopup(popup_573f4488878d463b95b545e164e181f4)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 16.0", "val": 3.0}, {"col": "2015", "idx": "Station 16.0", "val": 2.8}, {"col": "2016", "idx": "Station 16.0", "val": 2.6500000000000004}, {"col": "2017", "idx": "Station 16.0", "val": 2.8}, {"col": "2018", "idx": "Station 16.0", "val": 3.7}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_f9eb64bc8fcd48a19f9052301a568555);
+            
+        
+    
+    
+            var circle_marker_7fd76bb0d81b4566878082d27f5b580d = L.circleMarker(
+                [37.916666666666664, -122.44666666666667],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_7fd76bb0d81b4566878082d27f5b580d.bindTooltip(
+                `<div>
+                     "Charlie" Buoy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_845807392a6848acb64de890d2e030b2 = L.marker(
+                [37.87833333333333, -122.42166666666667],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_e9d72c837674412bbc5792b25fa42ec2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e17.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_845807392a6848acb64de890d2e030b2.setIcon(div_icon_e9d72c837674412bbc5792b25fa42ec2);
+        
+    
+        var popup_8557d2e61f0e4b1893c23fd9c6b56a01 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_9cb385adbc4c4d10b08be0b6a5a61014 = $(`             <div id="vega_9cb385adbc4c4d10b08be0b6a5a61014"></div>             `)[0];
+            popup_8557d2e61f0e4b1893c23fd9c6b56a01.setContent(vega_9cb385adbc4c4d10b08be0b6a5a61014);
+        
+
+        marker_845807392a6848acb64de890d2e030b2.bindPopup(popup_8557d2e61f0e4b1893c23fd9c6b56a01)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 17.0", "val": 3.4}, {"col": "2015", "idx": "Station 17.0", "val": 3.6}, {"col": "2016", "idx": "Station 17.0", "val": 4.2}, {"col": "2017", "idx": "Station 17.0", "val": 3.2}, {"col": "2018", "idx": "Station 17.0", "val": 3.8}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_9cb385adbc4c4d10b08be0b6a5a61014);
+            
+        
+    
+    
+            var circle_marker_d1dbb151816747feb37e0cb966e2cf79 = L.circleMarker(
+                [37.87833333333333, -122.42166666666667],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_d1dbb151816747feb37e0cb966e2cf79.bindTooltip(
+                `<div>
+                     Raccoon Strait
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c149897f0806420a8a11272e9c726253 = L.marker(
+                [37.846666666666664, -122.42166666666667],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_ca83d84c1aff467082cfe03c02aa4650 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e18.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_c149897f0806420a8a11272e9c726253.setIcon(div_icon_ca83d84c1aff467082cfe03c02aa4650);
+        
+    
+        var popup_e9609f20687b4c1db7c5c2f8e734d936 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_88ae80dea75e4322ae7e424142cd9c28 = $(`             <div id="vega_88ae80dea75e4322ae7e424142cd9c28"></div>             `)[0];
+            popup_e9609f20687b4c1db7c5c2f8e734d936.setContent(vega_88ae80dea75e4322ae7e424142cd9c28);
+        
+
+        marker_c149897f0806420a8a11272e9c726253.bindPopup(popup_e9609f20687b4c1db7c5c2f8e734d936)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 18.0", "val": 4.2}, {"col": "2015", "idx": "Station 18.0", "val": 3.9}, {"col": "2016", "idx": "Station 18.0", "val": 3.6}, {"col": "2017", "idx": "Station 18.0", "val": 3.6}, {"col": "2018", "idx": "Station 18.0", "val": 4.5}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_88ae80dea75e4322ae7e424142cd9c28);
+            
+        
+    
+    
+            var circle_marker_736d61b5236445b89ab34529c6c63563 = L.circleMarker(
+                [37.846666666666664, -122.42166666666667],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_736d61b5236445b89ab34529c6c63563.bindTooltip(
+                `<div>
+                     Point Blunt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df6834d730d54ff7862c004c7f6f63c6 = L.marker(
+                [38.151666666666664, -121.68833333333333],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_96a3687772f04fe687e04f7c98df7459 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e657.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_df6834d730d54ff7862c004c7f6f63c6.setIcon(div_icon_96a3687772f04fe687e04f7c98df7459);
+        
+    
+        var popup_f214266ebc524da1ad532a9e8149db82 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_d2fc1e4348ed4ee2a6d19d7accc851af = $(`             <div id="vega_d2fc1e4348ed4ee2a6d19d7accc851af"></div>             `)[0];
+            popup_f214266ebc524da1ad532a9e8149db82.setContent(vega_d2fc1e4348ed4ee2a6d19d7accc851af);
+        
+
+        marker_df6834d730d54ff7862c004c7f6f63c6.bindPopup(popup_f214266ebc524da1ad532a9e8149db82)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 657.0", "val": 2.9}, {"col": "2015", "idx": "Station 657.0", "val": 2.6}, {"col": "2016", "idx": "Station 657.0", "val": 1.5}, {"col": "2017", "idx": "Station 657.0", "val": 2.5}, {"col": "2018", "idx": "Station 657.0", "val": 1.9}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_d2fc1e4348ed4ee2a6d19d7accc851af);
+            
+        
+    
+    
+            var circle_marker_51830aae050a488a9340c925d8e24cb7 = L.circleMarker(
+                [38.151666666666664, -121.68833333333333],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_51830aae050a488a9340c925d8e24cb7.bindTooltip(
+                `<div>
+                     Rio Vista
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37dfca6acd414d25a0cca86481f492f0 = L.marker(
+                [37.82, -122.39333333333333],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_f19eec394cd8407789852c0bfc61ea13 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e20.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_37dfca6acd414d25a0cca86481f492f0.setIcon(div_icon_f19eec394cd8407789852c0bfc61ea13);
+        
+    
+        var popup_577d8ef8767e4a6f9c7b69b3f99ed0b5 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_f10d4b1a2feb4b488560a3ca828b9877 = $(`             <div id="vega_f10d4b1a2feb4b488560a3ca828b9877"></div>             `)[0];
+            popup_577d8ef8767e4a6f9c7b69b3f99ed0b5.setContent(vega_f10d4b1a2feb4b488560a3ca828b9877);
+        
+
+        marker_37dfca6acd414d25a0cca86481f492f0.bindPopup(popup_577d8ef8767e4a6f9c7b69b3f99ed0b5)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 20.0", "val": 4.2}, {"col": "2015", "idx": "Station 20.0", "val": 4.4}, {"col": "2016", "idx": "Station 20.0", "val": 4.1}, {"col": "2017", "idx": "Station 20.0", "val": 3.1}, {"col": "2018", "idx": "Station 20.0", "val": 4.3}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_f10d4b1a2feb4b488560a3ca828b9877);
+            
+        
+    
+    
+            var circle_marker_42555341384d47ab8521447903dd351a = L.circleMarker(
+                [37.82, -122.39333333333333],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_42555341384d47ab8521447903dd351a.bindTooltip(
+                `<div>
+                     Blossom Rock
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c723e7838e4144df88a2d578404b1624 = L.marker(
+                [37.788333333333334, -122.35833333333333],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_e679418660644634967ff78c0178eac6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e21.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_c723e7838e4144df88a2d578404b1624.setIcon(div_icon_e679418660644634967ff78c0178eac6);
+        
+    
+        var popup_3671e008673a4ba0a4aca273e0d1477f = L.popup({"maxWidth": 1100});
+
+        
+            var vega_cec7813b8203422b97d8736a33ad28f9 = $(`             <div id="vega_cec7813b8203422b97d8736a33ad28f9"></div>             `)[0];
+            popup_3671e008673a4ba0a4aca273e0d1477f.setContent(vega_cec7813b8203422b97d8736a33ad28f9);
+        
+
+        marker_c723e7838e4144df88a2d578404b1624.bindPopup(popup_3671e008673a4ba0a4aca273e0d1477f)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 21.0", "val": 4.7}, {"col": "2015", "idx": "Station 21.0", "val": 4.4}, {"col": "2016", "idx": "Station 21.0", "val": 4.5}, {"col": "2017", "idx": "Station 21.0", "val": 3.4}, {"col": "2018", "idx": "Station 21.0", "val": 4.1}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_cec7813b8203422b97d8736a33ad28f9);
+            
+        
+    
+    
+            var circle_marker_22f80fb15a304121a827f4f632b29c77 = L.circleMarker(
+                [37.788333333333334, -122.35833333333333],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_22f80fb15a304121a827f4f632b29c77.bindTooltip(
+                `<div>
+                     Bay Bridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_923b9d246a0c4979a19218824c462429 = L.marker(
+                [37.765, -122.35833333333333],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_254aac2f57c54caa922a7fc19ea8858a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e22.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_923b9d246a0c4979a19218824c462429.setIcon(div_icon_254aac2f57c54caa922a7fc19ea8858a);
+        
+    
+        var popup_274837ea63bd4767a4373711e6d875c6 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_699c6b091145437194267c10bdd14fea = $(`             <div id="vega_699c6b091145437194267c10bdd14fea"></div>             `)[0];
+            popup_274837ea63bd4767a4373711e6d875c6.setContent(vega_699c6b091145437194267c10bdd14fea);
+        
+
+        marker_923b9d246a0c4979a19218824c462429.bindPopup(popup_274837ea63bd4767a4373711e6d875c6)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 22.0", "val": 4.1}, {"col": "2015", "idx": "Station 22.0", "val": 4.2}, {"col": "2016", "idx": "Station 22.0", "val": 4.2}, {"col": "2017", "idx": "Station 22.0", "val": 3.0}, {"col": "2018", "idx": "Station 22.0", "val": 3.8}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_699c6b091145437194267c10bdd14fea);
+            
+        
+    
+    
+            var circle_marker_41a6890afec0409081100457ed17ccb3 = L.circleMarker(
+                [37.765, -122.35833333333333],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_41a6890afec0409081100457ed17ccb3.bindTooltip(
+                `<div>
+                     Potrero Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6f1ef7768084b309dfaafa44ee150df = L.marker(
+                [37.72833333333333, -122.33666666666667],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_073b21e6e00340fa92aa453e38e78f6d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e23.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_a6f1ef7768084b309dfaafa44ee150df.setIcon(div_icon_073b21e6e00340fa92aa453e38e78f6d);
+        
+    
+        var popup_618569c05ac244a9bdca69fe68d55b6d = L.popup({"maxWidth": 1100});
+
+        
+            var vega_ed92a10bdfa64a2a9c7e1bfc735745dd = $(`             <div id="vega_ed92a10bdfa64a2a9c7e1bfc735745dd"></div>             `)[0];
+            popup_618569c05ac244a9bdca69fe68d55b6d.setContent(vega_ed92a10bdfa64a2a9c7e1bfc735745dd);
+        
+
+        marker_a6f1ef7768084b309dfaafa44ee150df.bindPopup(popup_618569c05ac244a9bdca69fe68d55b6d)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 23.0", "val": 4.2}, {"col": "2015", "idx": "Station 23.0", "val": 4.0}, {"col": "2016", "idx": "Station 23.0", "val": 3.8}, {"col": "2017", "idx": "Station 23.0", "val": 3.0}, {"col": "2018", "idx": "Station 23.0", "val": 3.8}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_ed92a10bdfa64a2a9c7e1bfc735745dd);
+            
+        
+    
+    
+            var circle_marker_10cde8fa50f845a880e62d76382feee5 = L.circleMarker(
+                [37.72833333333333, -122.33666666666667],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_10cde8fa50f845a880e62d76382feee5.bindTooltip(
+                `<div>
+                     Hunter's Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f087373e6584f978f21a998b2f44dc4 = L.marker(
+                [37.69833333333333, -122.33833333333334],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_5c31351439fe45449ef96f490f3ff5f0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e24.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_3f087373e6584f978f21a998b2f44dc4.setIcon(div_icon_5c31351439fe45449ef96f490f3ff5f0);
+        
+    
+        var popup_663e095fb157434e8dda06f71e9b11d1 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_8f60243e426c429a8c060893b235430d = $(`             <div id="vega_8f60243e426c429a8c060893b235430d"></div>             `)[0];
+            popup_663e095fb157434e8dda06f71e9b11d1.setContent(vega_8f60243e426c429a8c060893b235430d);
+        
+
+        marker_3f087373e6584f978f21a998b2f44dc4.bindPopup(popup_663e095fb157434e8dda06f71e9b11d1)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 24.0", "val": 3.9}, {"col": "2015", "idx": "Station 24.0", "val": 3.7}, {"col": "2016", "idx": "Station 24.0", "val": 3.8}, {"col": "2017", "idx": "Station 24.0", "val": 3.4}, {"col": "2018", "idx": "Station 24.0", "val": 3.4}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_8f60243e426c429a8c060893b235430d);
+            
+        
+    
+    
+            var circle_marker_346c3e806c234756803c6fe7405947b6 = L.circleMarker(
+                [37.69833333333333, -122.33833333333334],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_346c3e806c234756803c6fe7405947b6.bindTooltip(
+                `<div>
+                     Candlestick Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45ff931f2d354b94830e29fddbddad3f = L.marker(
+                [37.67, -122.325],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_3c63d4b3952c4a139fbf18bf5cf360ed = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e25.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_45ff931f2d354b94830e29fddbddad3f.setIcon(div_icon_3c63d4b3952c4a139fbf18bf5cf360ed);
+        
+    
+        var popup_2f66e38e7a2448efbac18fc68abe8944 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_508095d87f5f49498abf8b88fa0f6944 = $(`             <div id="vega_508095d87f5f49498abf8b88fa0f6944"></div>             `)[0];
+            popup_2f66e38e7a2448efbac18fc68abe8944.setContent(vega_508095d87f5f49498abf8b88fa0f6944);
+        
+
+        marker_45ff931f2d354b94830e29fddbddad3f.bindPopup(popup_2f66e38e7a2448efbac18fc68abe8944)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 25.0", "val": 3.75}, {"col": "2015", "idx": "Station 25.0", "val": 3.8}, {"col": "2016", "idx": "Station 25.0", "val": 4.0}, {"col": "2017", "idx": "Station 25.0", "val": 3.8}, {"col": "2018", "idx": "Station 25.0", "val": 3.6}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_508095d87f5f49498abf8b88fa0f6944);
+            
+        
+    
+    
+            var circle_marker_bbc6a7ef33144873bfad3a240892e8d3 = L.circleMarker(
+                [37.67, -122.325],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_bbc6a7ef33144873bfad3a240892e8d3.bindTooltip(
+                `<div>
+                     Oyster Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47f6f101fa0245b0a2741747d49b17dd = L.marker(
+                [37.63666666666667, -122.31333333333333],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_dee6d6cc47a44e6b8d96e212fb97a777 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e26.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_47f6f101fa0245b0a2741747d49b17dd.setIcon(div_icon_dee6d6cc47a44e6b8d96e212fb97a777);
+        
+    
+        var popup_fed8388625bf400288c893f5ca66e463 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_80a52a3a73924e189a8f772d2b10ff52 = $(`             <div id="vega_80a52a3a73924e189a8f772d2b10ff52"></div>             `)[0];
+            popup_fed8388625bf400288c893f5ca66e463.setContent(vega_80a52a3a73924e189a8f772d2b10ff52);
+        
+
+        marker_47f6f101fa0245b0a2741747d49b17dd.bindPopup(popup_fed8388625bf400288c893f5ca66e463)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 26.0", "val": 4.05}, {"col": "2015", "idx": "Station 26.0", "val": 3.9}, {"col": "2016", "idx": "Station 26.0", "val": 3.8}, {"col": "2017", "idx": "Station 26.0", "val": 3.4}, {"col": "2018", "idx": "Station 26.0", "val": 3.8}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_80a52a3a73924e189a8f772d2b10ff52);
+            
+        
+    
+    
+            var circle_marker_9f6055b4c61e4a68bef4eaca8fa50d60 = L.circleMarker(
+                [37.63666666666667, -122.31333333333333],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_9f6055b4c61e4a68bef4eaca8fa50d60.bindTooltip(
+                `<div>
+                     San Bruno Shoal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9937cf430c714a6e9b5d4f5c7e0df81d = L.marker(
+                [37.61833333333333, -122.29166666666667],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_9b948370063d4b81ae48a00612fa64e0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e27.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_9937cf430c714a6e9b5d4f5c7e0df81d.setIcon(div_icon_9b948370063d4b81ae48a00612fa64e0);
+        
+    
+        var popup_7cc49b7890304641839a3cb70f711f0e = L.popup({"maxWidth": 1100});
+
+        
+            var vega_f6c75cc8764d4925a00df6e0ed46b005 = $(`             <div id="vega_f6c75cc8764d4925a00df6e0ed46b005"></div>             `)[0];
+            popup_7cc49b7890304641839a3cb70f711f0e.setContent(vega_f6c75cc8764d4925a00df6e0ed46b005);
+        
+
+        marker_9937cf430c714a6e9b5d4f5c7e0df81d.bindPopup(popup_7cc49b7890304641839a3cb70f711f0e)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 27.0", "val": 3.9}, {"col": "2015", "idx": "Station 27.0", "val": 3.8}, {"col": "2016", "idx": "Station 27.0", "val": 4.2}, {"col": "2017", "idx": "Station 27.0", "val": 3.25}, {"col": "2018", "idx": "Station 27.0", "val": 3.75}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_f6c75cc8764d4925a00df6e0ed46b005);
+            
+        
+    
+    
+            var circle_marker_35923d674bbb4030a9fc56784142d29e = L.circleMarker(
+                [37.61833333333333, -122.29166666666667],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_35923d674bbb4030a9fc56784142d29e.bindTooltip(
+                `<div>
+                     San Francisco Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65293bc0b8d545108b21c7cf9bf37d23 = L.marker(
+                [37.60166666666667, -122.27],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_ce6dd94649aa45bc895abbdd3582511c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e28.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_65293bc0b8d545108b21c7cf9bf37d23.setIcon(div_icon_ce6dd94649aa45bc895abbdd3582511c);
+        
+    
+        var popup_0dc79a735e624e3e9385aa717a2eec85 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_8d5a23172ee145ee8ebec95c909f585e = $(`             <div id="vega_8d5a23172ee145ee8ebec95c909f585e"></div>             `)[0];
+            popup_0dc79a735e624e3e9385aa717a2eec85.setContent(vega_8d5a23172ee145ee8ebec95c909f585e);
+        
+
+        marker_65293bc0b8d545108b21c7cf9bf37d23.bindPopup(popup_0dc79a735e624e3e9385aa717a2eec85)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 28.0", "val": 3.8}, {"col": "2015", "idx": "Station 28.0", "val": 3.8}, {"col": "2016", "idx": "Station 28.0", "val": 4.15}, {"col": "2017", "idx": "Station 28.0", "val": 3.2}, {"col": "2018", "idx": "Station 28.0", "val": 3.8}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_8d5a23172ee145ee8ebec95c909f585e);
+            
+        
+    
+    
+            var circle_marker_40471dd8300f4d4b94f479d8a4c89ee9 = L.circleMarker(
+                [37.60166666666667, -122.27],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_40471dd8300f4d4b94f479d8a4c89ee9.bindTooltip(
+                `<div>
+                     N. of San Mateo Bridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82d763072a474552a9e5e56439e38526 = L.marker(
+                [37.568333333333335, -122.21833333333333],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_6cfec54a26944b229422b38d10f68ad9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e29.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_82d763072a474552a9e5e56439e38526.setIcon(div_icon_6cfec54a26944b229422b38d10f68ad9);
+        
+    
+        var popup_f0f7f9e580a44339a40d159b8b1c8fe0 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_978a6efd5d724ada973ef7a9a8dff04a = $(`             <div id="vega_978a6efd5d724ada973ef7a9a8dff04a"></div>             `)[0];
+            popup_f0f7f9e580a44339a40d159b8b1c8fe0.setContent(vega_978a6efd5d724ada973ef7a9a8dff04a);
+        
+
+        marker_82d763072a474552a9e5e56439e38526.bindPopup(popup_f0f7f9e580a44339a40d159b8b1c8fe0)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 29.0", "val": 4.0}, {"col": "2015", "idx": "Station 29.0", "val": 4.1}, {"col": "2016", "idx": "Station 29.0", "val": 4.3}, {"col": "2017", "idx": "Station 29.0", "val": 3.2}, {"col": "2018", "idx": "Station 29.0", "val": 3.8}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_978a6efd5d724ada973ef7a9a8dff04a);
+            
+        
+    
+    
+            var circle_marker_8949f8e6a72e4330b9ea7f8c2452132d = L.circleMarker(
+                [37.568333333333335, -122.21833333333333],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_8949f8e6a72e4330b9ea7f8c2452132d.bindTooltip(
+                `<div>
+                     S. of San Mateo Bridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a1f4b6972304ef19cec8066fe3a58e5 = L.marker(
+                [37.555, -122.19],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_5540734afcdf400ea142fe452c4ae390 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e30.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_7a1f4b6972304ef19cec8066fe3a58e5.setIcon(div_icon_5540734afcdf400ea142fe452c4ae390);
+        
+    
+        var popup_8b153b940763484696163ea0e7c73327 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_5a1aa6639042488aa05926fcdd77603b = $(`             <div id="vega_5a1aa6639042488aa05926fcdd77603b"></div>             `)[0];
+            popup_8b153b940763484696163ea0e7c73327.setContent(vega_5a1aa6639042488aa05926fcdd77603b);
+        
+
+        marker_7a1f4b6972304ef19cec8066fe3a58e5.bindPopup(popup_8b153b940763484696163ea0e7c73327)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 30.0", "val": 4.3}, {"col": "2015", "idx": "Station 30.0", "val": 4.8}, {"col": "2016", "idx": "Station 30.0", "val": 4.5}, {"col": "2017", "idx": "Station 30.0", "val": 3.0}, {"col": "2018", "idx": "Station 30.0", "val": 3.9}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_5a1aa6639042488aa05926fcdd77603b);
+            
+        
+    
+    
+            var circle_marker_363b7198e22e44d58f15e9795ffb8b2d = L.circleMarker(
+                [37.555, -122.19],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_363b7198e22e44d58f15e9795ffb8b2d.bindTooltip(
+                `<div>
+                     Redwood Creek
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb7bbb294352405481bd60074875d45d = L.marker(
+                [37.528333333333336, -122.15833333333333],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_652ed03a1a854fbbb52edaf60fb2cb96 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e31.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_eb7bbb294352405481bd60074875d45d.setIcon(div_icon_652ed03a1a854fbbb52edaf60fb2cb96);
+        
+    
+        var popup_1dad812311c642d48cf52c47d3896348 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_1bc1cb44608b412b973a71dc956669ac = $(`             <div id="vega_1bc1cb44608b412b973a71dc956669ac"></div>             `)[0];
+            popup_1dad812311c642d48cf52c47d3896348.setContent(vega_1bc1cb44608b412b973a71dc956669ac);
+        
+
+        marker_eb7bbb294352405481bd60074875d45d.bindPopup(popup_1dad812311c642d48cf52c47d3896348)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 31.0", "val": 4.4}, {"col": "2015", "idx": "Station 31.0", "val": 5.4}, {"col": "2016", "idx": "Station 31.0", "val": 4.55}, {"col": "2017", "idx": "Station 31.0", "val": 3.2}, {"col": "2018", "idx": "Station 31.0", "val": 4.65}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_1bc1cb44608b412b973a71dc956669ac);
+            
+        
+    
+    
+            var circle_marker_ebdb914b2e2846d6a8383e0cc4a0aa49 = L.circleMarker(
+                [37.528333333333336, -122.15833333333333],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_ebdb914b2e2846d6a8383e0cc4a0aa49.bindTooltip(
+                `<div>
+                     Coyote Hills
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_845087c44d78479e8368a3468bcb127f = L.marker(
+                [37.51833333333333, -122.13333333333334],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_e7051d299d914084accea622aaf28256 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e32.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_845087c44d78479e8368a3468bcb127f.setIcon(div_icon_e7051d299d914084accea622aaf28256);
+        
+    
+        var popup_94ba244ade814b84ad335014aed76e48 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_49c7a4e660ba4b46ac5ebb2438dd6225 = $(`             <div id="vega_49c7a4e660ba4b46ac5ebb2438dd6225"></div>             `)[0];
+            popup_94ba244ade814b84ad335014aed76e48.setContent(vega_49c7a4e660ba4b46ac5ebb2438dd6225);
+        
+
+        marker_845087c44d78479e8368a3468bcb127f.bindPopup(popup_94ba244ade814b84ad335014aed76e48)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 32.0", "val": 4.6}, {"col": "2015", "idx": "Station 32.0", "val": 5.3}, {"col": "2016", "idx": "Station 32.0", "val": 5.0}, {"col": "2017", "idx": "Station 32.0", "val": 3.5}, {"col": "2018", "idx": "Station 32.0", "val": 5.0}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_49c7a4e660ba4b46ac5ebb2438dd6225);
+            
+        
+    
+    
+            var circle_marker_99695b5301e14cd6af820b2330bee3f3 = L.circleMarker(
+                [37.51833333333333, -122.13333333333334],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_99695b5301e14cd6af820b2330bee3f3.bindTooltip(
+                `<div>
+                     Ravenswood Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_330d88337e23491583f75e1e33a7a91f = L.marker(
+                [37.50833333333333, -122.12166666666667],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_0106a083e8e246e6ab657c5d1b6bad7e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e33.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_330d88337e23491583f75e1e33a7a91f.setIcon(div_icon_0106a083e8e246e6ab657c5d1b6bad7e);
+        
+    
+        var popup_715d94d93220480c89fbca7091b8d8a7 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_7b8f876e2ba3477e912f81d4b71c1401 = $(`             <div id="vega_7b8f876e2ba3477e912f81d4b71c1401"></div>             `)[0];
+            popup_715d94d93220480c89fbca7091b8d8a7.setContent(vega_7b8f876e2ba3477e912f81d4b71c1401);
+        
+
+        marker_330d88337e23491583f75e1e33a7a91f.bindPopup(popup_715d94d93220480c89fbca7091b8d8a7)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 33.0", "val": 4.65}, {"col": "2015", "idx": "Station 33.0", "val": 5.4}, {"col": "2016", "idx": "Station 33.0", "val": 5.3}, {"col": "2017", "idx": "Station 33.0", "val": 3.9}, {"col": "2018", "idx": "Station 33.0", "val": 4.8}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_7b8f876e2ba3477e912f81d4b71c1401);
+            
+        
+    
+    
+            var circle_marker_15a096429ca6422ab2855e1953baaa33 = L.circleMarker(
+                [37.50833333333333, -122.12166666666667],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_15a096429ca6422ab2855e1953baaa33.bindTooltip(
+                `<div>
+                     Dumbarton Bridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92050de449e54047815d05d51d638c36 = L.marker(
+                [37.495, -122.09333333333333],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_45b9f2bc001e440b8f818d7e8ce556c0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e34.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_92050de449e54047815d05d51d638c36.setIcon(div_icon_45b9f2bc001e440b8f818d7e8ce556c0);
+        
+    
+        var popup_740db51f7fa34390be19839b3e222216 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_89f075e0703643feac81b6381c07ccf6 = $(`             <div id="vega_89f075e0703643feac81b6381c07ccf6"></div>             `)[0];
+            popup_740db51f7fa34390be19839b3e222216.setContent(vega_89f075e0703643feac81b6381c07ccf6);
+        
+
+        marker_92050de449e54047815d05d51d638c36.bindPopup(popup_740db51f7fa34390be19839b3e222216)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 34.0", "val": 5.1}, {"col": "2015", "idx": "Station 34.0", "val": 5.6}, {"col": "2016", "idx": "Station 34.0", "val": 5.45}, {"col": "2017", "idx": "Station 34.0", "val": 4.3}, {"col": "2018", "idx": "Station 34.0", "val": 4.0}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_89f075e0703643feac81b6381c07ccf6);
+            
+        
+    
+    
+            var circle_marker_f2cb12cb8e8d4edca8ee8ebe8c0052a8 = L.circleMarker(
+                [37.495, -122.09333333333333],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_f2cb12cb8e8d4edca8ee8ebe8c0052a8.bindTooltip(
+                `<div>
+                     Newark Slough
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0f9cf40cbad477aa4f54d5611026853 = L.marker(
+                [37.48, -122.07833333333333],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_4b400442cf58459fa972125ef14adf9d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e35.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_b0f9cf40cbad477aa4f54d5611026853.setIcon(div_icon_4b400442cf58459fa972125ef14adf9d);
+        
+    
+        var popup_9ce94584bc5547d19178e73f8332cc30 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_7c8ed8d399234e3a80f102b2936cc6ac = $(`             <div id="vega_7c8ed8d399234e3a80f102b2936cc6ac"></div>             `)[0];
+            popup_9ce94584bc5547d19178e73f8332cc30.setContent(vega_7c8ed8d399234e3a80f102b2936cc6ac);
+        
+
+        marker_b0f9cf40cbad477aa4f54d5611026853.bindPopup(popup_9ce94584bc5547d19178e73f8332cc30)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 35.0", "val": 5.3}, {"col": "2015", "idx": "Station 35.0", "val": 5.199999999999999}, {"col": "2016", "idx": "Station 35.0", "val": 5.4}, {"col": "2017", "idx": "Station 35.0", "val": 3.7}, {"col": "2018", "idx": "Station 35.0", "val": 3.9}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_7c8ed8d399234e3a80f102b2936cc6ac);
+            
+        
+    
+    
+            var circle_marker_7eaae3ab5f8f433990802a26b17b8458 = L.circleMarker(
+                [37.48, -122.07833333333333],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_7eaae3ab5f8f433990802a26b17b8458.bindTooltip(
+                `<div>
+                     Mowry Slough
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92c6ea87337743af84bc1527ae0f70c6 = L.marker(
+                [37.471666666666664, -122.06666666666666],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_8129762462e64bf39fa3f9d676113f51 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e36.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_92c6ea87337743af84bc1527ae0f70c6.setIcon(div_icon_8129762462e64bf39fa3f9d676113f51);
+        
+    
+        var popup_548ceb12eaf44d18b0325557ae547596 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_98a8c8c55f63469aa3bb298242207c6e = $(`             <div id="vega_98a8c8c55f63469aa3bb298242207c6e"></div>             `)[0];
+            popup_548ceb12eaf44d18b0325557ae547596.setContent(vega_98a8c8c55f63469aa3bb298242207c6e);
+        
+
+        marker_92c6ea87337743af84bc1527ae0f70c6.bindPopup(popup_548ceb12eaf44d18b0325557ae547596)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 36.0", "val": 5.3}, {"col": "2015", "idx": "Station 36.0", "val": 5.7}, {"col": "2016", "idx": "Station 36.0", "val": 5.0}, {"col": "2017", "idx": "Station 36.0", "val": 4.1}, {"col": "2018", "idx": "Station 36.0", "val": 4.15}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_98a8c8c55f63469aa3bb298242207c6e);
+            
+        
+    
+    
+            var circle_marker_2cc3e3906bd243c98b145f3dd2bc74b2 = L.circleMarker(
+                [37.471666666666664, -122.06666666666666],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_2cc3e3906bd243c98b145f3dd2bc74b2.bindTooltip(
+                `<div>
+                     N/A Station Name
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e809611f6464c83b334ae19f2e1d31e = L.marker(
+                [38.06, -121.8],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_6c37ffc40b22472a8a27f8312195e43f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e649.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_1e809611f6464c83b334ae19f2e1d31e.setIcon(div_icon_6c37ffc40b22472a8a27f8312195e43f);
+        
+    
+        var popup_456631dfecdd4432b1c0f0648b92fe87 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_5a82355684bd4c609492f6652addad7d = $(`             <div id="vega_5a82355684bd4c609492f6652addad7d"></div>             `)[0];
+            popup_456631dfecdd4432b1c0f0648b92fe87.setContent(vega_5a82355684bd4c609492f6652addad7d);
+        
+
+        marker_1e809611f6464c83b334ae19f2e1d31e.bindPopup(popup_456631dfecdd4432b1c0f0648b92fe87)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 649.0", "val": 2.5}, {"col": "2015", "idx": "Station 649.0", "val": 1.8}, {"col": "2016", "idx": "Station 649.0", "val": 2.7}, {"col": "2017", "idx": "Station 649.0", "val": 3.4}, {"col": "2018", "idx": "Station 649.0", "val": 2.55}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_5a82355684bd4c609492f6652addad7d);
+            
+        
+    
+    
+            var circle_marker_cb820a1a5cf1476992aba0f58c54b78e = L.circleMarker(
+                [38.06, -121.8],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_cb820a1a5cf1476992aba0f58c54b78e.bindTooltip(
+                `<div>
+                     Sacramento River
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_999f286d2863487cb18b1626127aa98b = L.marker(
+                [38.105, -121.72],
+                {}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            var div_icon_eaebe06dde2e430da4b31fed8dc7401a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Rockwell; font-size: 9pt; color :#00664b\"\u003e653.0\u003c/div\u003e", "iconAncher": [7, 20], "iconSize": [28, 25]});
+            marker_999f286d2863487cb18b1626127aa98b.setIcon(div_icon_eaebe06dde2e430da4b31fed8dc7401a);
+        
+    
+        var popup_c9ec997fdc7148949f861eec9a16feb5 = L.popup({"maxWidth": 1100});
+
+        
+            var vega_4e6c5ef7b7b848d1931724a83a6e9659 = $(`             <div id="vega_4e6c5ef7b7b848d1931724a83a6e9659"></div>             `)[0];
+            popup_c9ec997fdc7148949f861eec9a16feb5.setContent(vega_4e6c5ef7b7b848d1931724a83a6e9659);
+        
+
+        marker_999f286d2863487cb18b1626127aa98b.bindPopup(popup_c9ec997fdc7148949f861eec9a16feb5)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Index", "type": "x"}, {"scale": "y", "title": "Values", "type": "y"}], "data": [{"name": "table", "values": [{"col": "2014", "idx": "Station 653.0", "val": 2.4}, {"col": "2015", "idx": "Station 653.0", "val": 2.7}, {"col": "2016", "idx": "Station 653.0", "val": 1.8}, {"col": "2017", "idx": "Station 653.0", "val": 4.75}, {"col": "2018", "idx": "Station 653.0", "val": NaN}]}], "height": 250, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Year"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 900},vega_4e6c5ef7b7b848d1931724a83a6e9659);
+            
+        
+    
+    
+            var circle_marker_a2763c8f234a48018358a977543adcbb = L.circleMarker(
+                [38.105, -121.72],
+                {"bubblingMouseEvents": true, "color": "#00b33c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b33c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(map_4e017ab9d3b24e20a8c1581fa48e002e);
+        
+    
+            circle_marker_a2763c8f234a48018358a977543adcbb.bindTooltip(
+                `<div>
+                     N/A Station Name
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

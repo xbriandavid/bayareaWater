@@ -1,2 +1,6 @@
 # Bay Area Water Quality Analysis - Chlorophyll 
-![](./maps/chlo148.gif)
+Chloropyll concentration over time             |        
+:-------------------------:|
+![](./chlo.gif)  |  !
+Bar Chart by Station|
+![](./maps/mapchart.png)  |  !
